@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>University Admission Form</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">
+                Admissions Department - Admission form
+            </h1>
+        </header>
+
+        <main class="main">
+            <section class="survey">
+                <form class="survey__form">
+                    <div class="input__container survey__form--fname">
+                        <label for="name">first name: </label>
+                        <input
+                            required
+                            type="text"
+                            placeholder="first name..."
+                            id="name"
+                            name="name"
+                        />
+                    </div>
+                    <div class="input__container survey__form--lname">
+                        <label for="last-name">last name: </label>
+                        <input
+                            required
+                            type="text"
+                            placeholder="last name..."
+                            id="last-name"
+                            name="last-name"
+                        />
+                    </div>
+                    <div class="input__container survey__form--email">
+                        <label for="email">email: </label>
+                        <input
+                            required
+                            type="email"
+                            placeholder="email..."
+                            id="email"
+                            name="email"
+                        />
+                    </div>
+                    <div class="input__container survey__form--date">
+                        <label for="date">graduation date: </label>
+                        <input
+                            required
+                            type="date"
+                            placeholder="graduation date..."
+                            id="date"
+                            name="date"
+                        />
+                    </div>
+                    <div class="input__container survey__form--age">
+                        <label for="age">age: </label>
+                        <input
+                            required
+                            type="number"
+                            id="age"
+                            placeholder="your age..."
+                            name="age"
+                        />
+                    </div>
+                    <div class="input__container survey__form--selection">
+                        <label for="selection"
+                            >Choose your career of interest:
+                        </label>
+                        <select required name="selection" id="selection">
+                            <option value="" selected>
+                                --Choose an option
+                            </option>
+                            <option value="soft-eng">
+                                Software engineering
+                            </option>
+                            <option value="medicine">Medicine</option>
+                            <option value="law">Law</option>
+                            <option value="bio-eng">Bioengineering</option>
+                        </select>
+                    </div>
+                    <div class="input__container survey__form--term-selection">
+                        Select your desired start term date:
+                        <div>
+                            <input
+                                type="radio"
+                                name="term"
+                                value="winter"
+                                id="winter"
+                            />
+                            <label for="winter">winter 2023</label>
+
+                            <input
+                                type="radio"
+                                name="term"
+                                value="summer"
+                                id="summer"
+                            />
+                            <label for="summer">summer 2023</label>
+
+                            <input
+                                type="radio"
+                                name="term"
+                                value="fall"
+                                id="fall"
+                            />
+                            <label for="fall">fall 2023</label>
+                        </div>
+                    </div>
+                    <div class="input__container survey__form--surveys">
+                        <input type="checkbox" id="surveys" name="survey" />
+                        <label for="surveys"
+                            >I want to take more surveys from university</label
+                        >
+                    </div>
+                    <div class="input__container survey__form--fb">
+                        <label for="fb">Suggestions/feedback: </label>
+                        <textarea
+                            name="fb"
+                            id="fb"
+                            rows="5"
+                            cols="33"
+                        ></textarea>
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">McGill University &copy;</footer>
+    </body>
+</html>
