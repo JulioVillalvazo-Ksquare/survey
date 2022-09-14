@@ -2,4 +2,4 @@
 
 ## this was the structure used to create the web site
 
-![structure](https://imgur.com/a/gcVCWvl)
+![structure](https://i.imgur.com/YjdCCv9.jpg)
